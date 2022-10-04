@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# === Download Official DMG === #
+./downloader/template.py
+
+# === Build dmg2img tool === #
+cd dmg2img/
+./build
+cd ..
+
+# === Converting DMG to IMG === #
+./dmg2img/dmg2img BaseSystem.dmg
+
+# === Cleaning === #
+rm BaseSystem.dmg && rm ./dmg2img/dmg2img
