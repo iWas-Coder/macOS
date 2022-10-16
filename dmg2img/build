@@ -7,7 +7,9 @@ BOLD_YELLOW='\033[1;33m'
 OFF='\033[0m'
 
 CC="gcc"
-CFLAGS="-Wall"
+CFLAGS="-Wall -pedantic"
+LFLAGS="-s"
+LIBS="-L. -lz -lbz2"
 
 tput civis
 
@@ -35,7 +37,7 @@ sleep 1
 
 # === Linking === #
 echo -e "[ 99%] ${BOLD_YELLOW}Linking C executable dmg2img${OFF}"
-$CC -s dmg2img.o base64.o adc.o -L. -lz -lbz2 -o dmg2img
+$CC $LFLAGS dmg2img.o base64.o adc.o $LIBS -o dmg2img
 sleep 0.5
 echo -e "[100%] Built target dmg2img"
 
