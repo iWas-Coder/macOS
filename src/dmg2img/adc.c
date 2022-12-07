@@ -1,4 +1,4 @@
-#include "../include/adc.h"
+#include "include/adc.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>

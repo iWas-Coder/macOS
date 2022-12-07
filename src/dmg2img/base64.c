@@ -1,4 +1,4 @@
-#include "../include/base64.h"
+#include "include/base64.h"
 #include <stdlib.h>
 
 bool is_base64(const char c)

@@ -1,0 +1,25 @@
+Cloned repository
+-----------------
+Instructions to prepare the project when cloned directly the repository:
+
+1. aclocal
+2. autoheader
+3. autoconf
+4. automake --gnu --add-missing
+
+
+Release Tarball
+---------------
+After preparing the project with the previous instructions, or when
+downloaded directly a release tarball:
+
+1. mkdir build && cd $_
+2. ../configure [--enable-silent-rules] --prefix $(pwd)
+3. make [-j$(nproc)]
+
+
+Clean the project tree
+----------------------
+(...):
+
+1. cat .gitignore | grep -v '#' | xargs rm -rf

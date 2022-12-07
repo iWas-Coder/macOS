@@ -1,3 +1,18 @@
-BaseSystem.dmg
-BaseSystem.img
-downloader/__pycache__/
+# aclocal
+autom4te.cache/
+aclocal.m4
+# autoheader
+config.h.in
+# autoconf
+configure
+# automake --gnu --add-missing
+compile
+install-sh
+missing
+depcomp
+py-compile
+Makefile.in
+# ../configure && make
+build/
+# pycache
+src/downloader/modules/__pycache__/

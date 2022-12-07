@@ -11,9 +11,9 @@ Options: -s (silent) -v (verbose) -V (extremely verbose) -d (debug)\n\
 #include <string.h>
 #include <assert.h>
 #include <inttypes.h>
-#include "../include/dmg2img.h"
-#include "../include/base64.h"
-#include "../include/mntcmd.h"
+#include "include/dmg2img.h"
+#include "include/base64.h"
+#include "include/mntcmd.h"
 
 /* take chunk size to be 1 MByte so it will work even with little RAM */
 #define CHUNKSIZE 0x100000
